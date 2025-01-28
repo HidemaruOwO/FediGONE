@@ -1,4 +1,0 @@
-{
-	"buildCommand": "bun run quick-build-with-bun",
-	"rewrites": [{ "source": "/.*", "destination": "/dist", "status": 410 }]
-}
