@@ -10,6 +10,9 @@ import {
 	NEXT_INSTANCE_URL,
 } from "../consts";
 
+const click =
+	"text-center group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30";
+
 const mainMessage: string = MAIN_MESSAGE_LINE.map((m, i) =>
 	i < MAIN_MESSAGE_LINE.length - 1 ? `${m}<br />` : m,
 ).join("");
@@ -22,13 +25,7 @@ const mainMessage: string = MAIN_MESSAGE_LINE.map((m, i) =>
     <body>
       <header class="w-full h-12 backdrop-blur-lg bg-black!">
         <div class="flex justify-center items-center">
-          <Image
-            src="/hidemaru-2023.png"
-            height="50"
-            width="50"
-            alt="Logo"
-            class="block mx-auto"
-          />
+          <Icon name="ant-design:aliwangwang-outlined" height={50} width={50} class="block mx-auto" />
         </div>
       </header>
       <main
@@ -39,14 +36,6 @@ const mainMessage: string = MAIN_MESSAGE_LINE.map((m, i) =>
           >
           <nav set:html={mainMessage} />
           <Icon name="game-icons:hasty-grave" class="w-48 sm:w-96" width={300} height={300} />
-          <!-- <Image -->
-          <!--   class="w-48 sm:w-96" -->
-          <!--   src="/grave.png" -->
-          <!--   height={400} -->
-          <!--   width={400} -->
-          <!--   loading="lazy" -->
-          <!--   alt="grave" -->
-          <!-- /> -->
         </div>
 
         <div
@@ -54,7 +43,7 @@ const mainMessage: string = MAIN_MESSAGE_LINE.map((m, i) =>
         >
           <a
               href={NEXT_INSTANCE_URL}
-            class="text-center group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+              class={click}
             target="_blank"
             rel="noopener noreferrer"
             >
@@ -69,7 +58,15 @@ const mainMessage: string = MAIN_MESSAGE_LINE.map((m, i) =>
           </p>
           </a>
         </div>
+        <a href="https://git.v-sli.me/HidemaruOwO/FediGONE" class={"inline-flex items-center text-gray-500 rounded-lg" + click}>
+          <Icon name="devicon:forgejo" class="w-5 h-5 me-3" />
+          <span class="w-full">Powered by FediGONE</span>
+          <svg class="w-4 h-4 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+          </svg>
+        </a> 
       </main>
+
     </body>
   </html>
 </Layout>
