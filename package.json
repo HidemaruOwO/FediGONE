@@ -1,35 +1,30 @@
 {
-  "name": "mi.v-sli.me-gone",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "astro dev",
-    "build": "astro build",
-    "start": "astro preview",
-    "lint": "next lint",
-    "export": "next export"
-  },
-  "dependencies": {
-    "@astrojs/tailwind": "^3.0.0",
-    "astro": "^5.1.10",
-    "astro-icon": "^1.1.5",
-    "prettier-plugin-astro": "^0.14.1"
-  },
-  "devDependencies": {
-    "@iconify-json/ant-design": "^1.2.5",
-    "@iconify-json/devicon": "^1.2.12",
-    "@iconify-json/devicon-plain": "^1.2.11",
-    "@iconify-json/game-icons": "^1.2.1",
-    "@iconify-json/pixelarticons": "^1.2.2",
-    "@iconify-json/tabler": "^1.2.15",
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "autoprefixer": "^10.0.1",
-    "eslint": "^8",
-    "postcss": "^8",
-    "tailwindcss": "^3.3.0",
-    "typescript": "^5"
-  },
-  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
+	"name": "FediGONE",
+	"version": "0.1.0",
+	"scripts": {
+		"dev": "astro dev",
+		"build": "astro build",
+		"start": "astro preview",
+		"quick-build-with-bun": "bun install && bun run build",
+		"quick-build-with-npm": "npm install && npm run build"
+	},
+	"dependencies": {
+		"@astrojs/tailwind": "^3.0.0",
+		"astro": "^5.1.10",
+		"astro-icon": "^1.1.5",
+		"prettier-plugin-astro": "^0.14.1"
+	},
+	"devDependencies": {
+		"@iconify-json/ant-design": "^1.2.5",
+		"@iconify-json/devicon": "^1.2.12",
+		"@iconify-json/devicon-plain": "^1.2.11",
+		"@iconify-json/game-icons": "^1.2.1",
+		"@iconify-json/pixelarticons": "^1.2.2",
+		"@iconify-json/tabler": "^1.2.15",
+		"@types/node": "^20",
+		"autoprefixer": "^10.0.1",
+		"eslint": "^8",
+		"tailwindcss": "^3.3.0",
+		"typescript": "^5"
+	}
 }
