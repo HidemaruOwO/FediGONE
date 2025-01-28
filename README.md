@@ -6,7 +6,7 @@
 
 ## What is this?
 
-A "410 Gone" frontend page for a Federated SNS.
+A "410 Gone" frontend page for a Federated SNS. [View Demo Page](https://fedi-gone.vercel.app/)
 
 </div>
 
