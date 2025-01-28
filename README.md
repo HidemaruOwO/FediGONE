@@ -10,6 +10,14 @@ A "410 Gone" frontend page for a Federated SNS. [View Demo Page](https://fedi-go
 
 </div>
 
+<details>
+<summary>View Screenshots</summary>
+
+![curl](./docs/curl.png)
+![webpage](./docs/webpage.png)
+
+</details>
+
 ## Usage 💨
 
 You need to write `src/consts.ts` according to your instance information.
@@ -30,7 +38,7 @@ vercel deploy --prod
 ```
 
 <details>
-<summary>Show default src/consts.ts</summary>
+<summary>View default src/consts.ts</summary>
 
 ```ts
 export const DOMAIN = "ap.example.tld";
