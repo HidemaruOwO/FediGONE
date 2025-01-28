@@ -35,6 +35,9 @@ vim src/consts.ts
 bun run install
 bun run build
 
+# create vercel.json on dist directory
+ln vercel.json dist/vercel.json
+
 # deploy FediGONE on vercel
 cd dist
 vercel deploy --prod
