@@ -22,7 +22,9 @@ vim src/consts.ts
 bun run install
 bun run build
 
-# use dist folder
+# deploy FediGONE
+cd dist
+vercel deploy --prod
 ```
 
 ## Dependencies 🪡
