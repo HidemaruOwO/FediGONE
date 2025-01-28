@@ -13,7 +13,6 @@ A "410 Gone" frontend page for a Federated SNS. [View Demo Page](https://fedi-go
 <details>
 <summary>View Screenshots</summary>
 
-![curl](./docs/curl.png)
 ![webpage](./docs/webpage.png)
 
 </details>
@@ -22,6 +21,9 @@ A "410 Gone" frontend page for a Federated SNS. [View Demo Page](https://fedi-go
 
 You need to write `src/consts.ts` according to your instance information.
 
+> [!WARNING]
+> You shouldn't edit `dist/vercel.json`. If you changed this file, your activity pub server can't be return 410 GONE.
+
 ```bash
 git clone https://git.v-sli.me/HidemaruOwO/FediGONE.git
 cd FediGONE
@@ -29,10 +31,11 @@ cd FediGONE
 # edit src/consts.ts for your AP instance
 vim src/consts.ts
 
+# export static HTML files
 bun run install
 bun run build
 
-# deploy FediGONE
+# deploy FediGONE on vercel
 cd dist
 vercel deploy --prod
 ```
