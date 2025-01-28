@@ -1,30 +1,38 @@
-# Astroで構築されたプロジェクト
+<div align="center">
 
-## 開発サーバー起動
+# †| FediGONE |†
+
+![image](./docs/logo.png)
+
+## What is this?
+
+A "410 Gone" frontend page for a Federated SNS.
+
+</div>
+
+## Usage 💨
 
 ```bash
-npm run dev
+git clone https://git.v-sli.me/HidemaruOwO/FediGONE.git
+cd FediGONE
+
+# edit src/consts.ts for your AP instance
+vim src/consts.ts
+
+bun run install
+bun run build
+
+# use dist folder
 ```
 
-## ビルドおよび静的エクスポート
+## Dependencies 🪡
 
-```bash
-npm run build
-```
+requirements `bun` or `nodejs` for build astro project.
 
-生成された`dist`ディレクトリを配信することで静的サイトとして公開できます。
+- `bun`
+- `nodejs`
 
-## Learn More
+## Reference ✨
 
-To learn more about Astro, take a look at the following resources:
+- [HidemaruOwO/Awesome-README](https://git.v-sli.me/HidemaruOwO/Awesome-README)
 
-- [Astro Documentation](https://docs.astro.build) - learn about Astro features and API.
-- [Learn Astro](https://docs.astro.build/en/getting-started/) - an interactive Astro tutorial.
-
-You can check out [the Astro GitHub repository](https://github.com/withastro/astro) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Astro app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=astro&utm_source=create-astro-app&utm_campaign=create-astro-app-readme) from the creators of Astro.
-
-Check out our [Astro deployment documentation](https://docs.astro.build/en/guides/deploy/) for more details.
