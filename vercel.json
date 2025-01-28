@@ -1,0 +1,4 @@
+{
+	"buildCommand": "bun run quick-build-with-bun",
+	"routes": [{ "src": "dist/*", "status": 410 }]
+}
