@@ -30,7 +30,7 @@ vercel deploy --prod
 ```
 
 <details>
-<sumamry>View `src/consts.ts`</summary>
+<summary>Show default src/consts.ts</summary>
 
 ```ts
 export const DOMAIN = "ap.example.tld";
